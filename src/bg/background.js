@@ -5,12 +5,11 @@
 // });
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
   if (message.popupopen) {
-    var url = '';
-    chrome.windows.getCurrent(w => {
-      chrome.tabs.query({active: true, windowId: w.id}, tabs => {
-        url = tabs[0].url;
-        // console.log(url)
-      });
-    });
+      fetch("https://us-central1-cacheem.cloudfunctions.net/cache", {
+        method: 'DELETE',
+        headers:{
+          'Content-Type': 'application/json'
+      } })
+    .catch(error => console.error('Error:', error));
   }
 });
