@@ -49,3 +49,7 @@ document.getElementById("yuk").addEventListener("click", () => add('M'));
 document.getElementById("chil").addEventListener("click", () => add('O'));
 document.getElementById("pal").addEventListener("click", () => add('P'));
 document.getElementById("gu").addEventListener("click", () => add('S'));
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
