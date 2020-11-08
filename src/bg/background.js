@@ -12,9 +12,8 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
       headers:{
         'Content-Type': 'application/json'
     } })
-    .then(data => { return data.text() })
     .then(res => {
-      console.log(res)
+      console.log('test')
       // $.each(res, function( index, value ) {
       //   value = unicodeToChar(value).replace(/\\n/g, '');
       //   document.body.innerHTML = document.body.innerHTML.split(value).join('<span style="background-color: #fff799;">' + value + '</span>');
