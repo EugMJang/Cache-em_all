@@ -19,11 +19,13 @@
     "default_title": "Cache'em All!",
     "default_popup": "src/browser_action/browser_action.html"
   },
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
   "permissions": [
     "contextMenus",
     "tabs",
     "https://*/*",
     "http://*/*",
-    "activeTab"
+    "activeTab",
+    "https://us-central1-cacheem.cloudfunctions.net/cache-1"
   ]
 }

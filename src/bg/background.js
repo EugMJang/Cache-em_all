@@ -6,5 +6,20 @@
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
   if (message.popupopen) {
     console.log(sender.tab.url);
+    fetch("https://us-central1-cacheem.cloudfunctions.net/cache", {
+      method: 'GET',
+      // body: JSON.stringify(textToSend),
+      headers:{
+        'Content-Type': 'application/json'
+    } })
+    .then(data => { return data.text() })
+    .then(res => {
+      console.log(res)
+      // $.each(res, function( index, value ) {
+      //   value = unicodeToChar(value).replace(/\\n/g, '');
+      //   document.body.innerHTML = document.body.innerHTML.split(value).join('<span style="background-color: #fff799;">' + value + '</span>');
+      // });
+     })
+    .catch(error => console.error('Error:', error));
   }
 });
