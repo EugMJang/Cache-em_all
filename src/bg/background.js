@@ -5,7 +5,6 @@
 // });
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
   if (message.popupopen) {
-    console.log(sender.tab.url);
     var url = '';
     fetch("https://us-central1-cacheem.cloudfunctions.net/cache", {
       method: 'GET',

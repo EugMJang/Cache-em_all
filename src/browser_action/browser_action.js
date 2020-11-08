@@ -2,31 +2,49 @@ chrome.tabs.executeScript({
     code: 'chrome.runtime.sendMessage({popupopen: true});'
 });
 
-
-var generate = function() {
-
+var generate = function(code, url) {
+    chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
+        url = tabs[0].url;
+    });
+    fetch("https://us-central1-cacheem.cloudfunctions.net/cache", {
+      method: 'POST',
+      body: JSON.stringify({code, url}),
+      headers:{
+        'Content-Type': 'application/json'
+    } })
+    .then(res => {
+      alert("Created!")
+     })
+    .catch(error => console.error('Error:', error));
 };
 
-var validate = function() {
-    // var newUrl = "";
-    fetch("https://us-central1-cacheem.cloudfunctions.net/cache", {
+var validate = function(code) {
+    fetch(`https://us-central1-cacheem.cloudfunctions.net/cache?code=${code}`, {
       method: 'GET',
-      // body: JSON.stringify(textToSend),
       headers:{
         'Content-Type': 'application/json'
     } })
     .then(res => res.text())
     .then(res => {
-    //   newUrl = res;
-    //   console.log('test')
+      console.log(res);
       chrome.tabs.create({ url: res });
-      // $.each(res, function( index, value ) {
-      //   value = unicodeToChar(value).replace(/\\n/g, '');
-      //   document.body.innerHTML = document.body.innerHTML.split(value).join('<span style="background-color: #fff799;">' + value + '</span>');
-      // });
      })
     .catch(error => console.error('Error:', error));
 };
 
-document.getElementById("generate").addEventListener("click", () => generate());
-document.getElementById("validate").addEventListener("click", () => validate());
+var add = function(n) {
+  document.getElementById('selection').innerHTML += n;
+}
+
+document.getElementById("generate").addEventListener("click", () => generate('BBBC',''));
+document.getElementById("validate").addEventListener("click", () => validate('CBOP'));
+
+document.getElementById("il").addEventListener("click", () => add('B'));
+document.getElementById("i").addEventListener("click", () => add('C'));
+document.getElementById("sam").addEventListener("click", () => add('G'));
+document.getElementById("sa").addEventListener("click", () => add('J'));
+document.getElementById("o").addEventListener("click", () => add('L'));
+document.getElementById("yuk").addEventListener("click", () => add('M'));
+document.getElementById("chil").addEventListener("click", () => add('O'));
+document.getElementById("pal").addEventListener("click", () => add('P'));
+document.getElementById("gu").addEventListener("click", () => add('S'));
