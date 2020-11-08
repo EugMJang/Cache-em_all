@@ -15,17 +15,56 @@
             }
             .bg {
                 background-image: url("pokemon-party.jpg");
-
                 height: 100%;
 
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
+
+            th img {
+                width: 160px;
+            }
         </style>
         <title>Home</title>
     </head>
     <body>
+            <table  border="1px solid black" border-collapse="collapse" style="position:absolute; left: 35%">
+				<tr>
+					<th>
+						<img id="il" src="src/browser_action/images/bulbasaur.jpg" data-toggle="tooltip" title="Bulbasaur">
+					</th>
+					<th>
+						<img id="i" src="src/browser_action/images/charmander.png" data-toggle="tooltip" title="Charmander">
+					</th>
+					<th>
+						<img id="sam" src="src/browser_action/images/gible.png" data-toggle="tooltip" title="Gible">
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<img id="sa" src="src/browser_action/images/jigglypuff.png" data-toggle="tooltip" title="Jigglypuff">
+					</th>
+					<th>
+						<img id="o" src="src/browser_action/images/lucario.png" data-toggle="tooltip" title="Lucario">
+					</th>
+					<th>
+						<img id="yuk" src="src/browser_action/images/magikarp.png" data-toggle="tooltip" title="Magikarp">
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<img id="chil" src="src/browser_action/images/onix.png" data-toggle="tooltip" title="Onix">
+					</th>
+					<th>
+						<img id="pal" src="src/browser_action/images/pikachu.png" data-toggle="tooltip" title="Pikachu">
+					</th>
+					<th>
+						<img id="gu" src="src/browser_action/images/squirtle.png" data-toggle="tooltip" title="Squirtle">
+					</th>
+				</tr>
+			</table>
+            <button type="button" class="btn btn-danger" id="validate" style="position:absolute; top:70%; left: 50%">GO</button>
         <div class="bg"></div>
         <div class="container-fluid">
             <div class="row">
@@ -49,7 +88,7 @@
             <div class="row">
                 <div class="col-9 py-1">
                     <h2>How do I use this?</h2>
-                    <p>Download this folder as a zip and unzip it. Then, while you are managing your extensions, just click on "Load Unpacked" (make sure you have developer mode turned on) and select the unzipped file in your file directory, and the extension should be installed!</p>
+                    <p>Download <a href="https://github.com/EugMJang/Cache-em_all">this folder</a> as a zip and unzip it. Then, while you are managing your extensions, just click on "Load Unpacked" (make sure you have developer mode turned on) and select the unzipped file in your file directory, and the extension should be installed!</p>
                 </div>
             </div>
             <div class="row">
