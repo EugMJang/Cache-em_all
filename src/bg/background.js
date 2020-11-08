@@ -4,7 +4,6 @@
 //     "sample_setting": "This is how you use Store.js to remember values"
 // });
 
-
 //example of using a message handler from the inject scripts
 chrome.extension.onMessage.addListener(
   function(request, sender, sendResponse) {
@@ -12,6 +11,8 @@ chrome.extension.onMessage.addListener(
     sendResponse();
   });
 
-chrome.browserAction.onClicked.addListener(function(request, sender, sendResponse) {
-  console.log(sender.tab.url);
+chrome.browserAction.onClicked.addListener(function(tab) {
+  alert("BRUH")
+  console.log('test')
+  console.log(tab.url);
 });
