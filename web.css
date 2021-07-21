@@ -1,0 +1,20 @@
+body, html {
+    height: 100%;
+}
+.bg {
+    background-image: url("pokemon-party.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+th img {
+    width: 160px;
+}
+span {
+    background-color: white;
+    background-clip: content-box;
+    border-radius: 9px 12px;
+    padding: 4px;
+    font-size: 60px;
+}

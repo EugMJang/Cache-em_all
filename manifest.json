@@ -1,6 +1,6 @@
 {
   "name": "Cache'em All!",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "manifest_version": 2,
   "description": "This extension takes a URL and converts it to a sequence of four Pokemon images. From there that sequence can be shared with others in order to access the URL. The sequence of images expires after 10 minutes.",
   "icons": {
@@ -13,7 +13,6 @@
     "page": "src/bg/background.html",
     "persistent": true
   },
-  "options_page": "src/options_custom/index.html",
   "browser_action": {
     "default_icon": "icons/icon19.png",
     "default_title": "Cache'em All!",

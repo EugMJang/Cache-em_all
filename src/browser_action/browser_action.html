@@ -9,60 +9,36 @@
 				width: 400px;
 				font-family: Helvetica, Ubuntu, Arial, sans-serif;
 			}
-			h1 {
-				font-size: 2em;
-			}
 			img {
 				width: 128px;
 				height: 128px;
 			}
-			p {
-				text-align: center;
-			}
 		</style>
 	</head>
-	<p id="selection"></p>
+	<p id="selection" style="text-align: center"></p>
 	<body>
 		<div id="mainPopup">
-			<h1>Cache'em All!</h1>
+			<h1 style="font-size: 2em;">Cache'em All!</h1>
 			<table border="1px solid black" border-collapse="collapse">
 				<tr>
-					<th>
-						<img id="il" src="images/bulbasaur.jpg" data-toggle="tooltip" title="Bulbasaur">
-					</th>
-					<th>
-						<img id="i" src="images/charmander.png" data-toggle="tooltip" title="Charmander">
-					</th>
-					<th>
-						<img id="sam" src="images/gible.png" data-toggle="tooltip" title="Gible">
-					</th>
+					<th><img id="il" src="images/bulbasaur.jpg" data-toggle="tooltip" title="Bulbasaur"></th>
+					<th><img id="i" src="images/charmander.png" data-toggle="tooltip" title="Charmander"></th>
+					<th><img id="sam" src="images/gible.png" data-toggle="tooltip" title="Gible"></th>
 				</tr>
 				<tr>
-					<th>
-						<img id="sa" src="images/jigglypuff.png" data-toggle="tooltip" title="Jigglypuff">
-					</th>
-					<th>
-						<img id="o" src="images/lucario.png" data-toggle="tooltip" title="Lucario">
-					</th>
-					<th>
-						<img id="yuk" src="images/magikarp.png" data-toggle="tooltip" title="Magikarp">
-					</th>
+					<th><img id="sa" src="images/jigglypuff.png" data-toggle="tooltip" title="Jigglypuff"></th>
+					<th><img id="o" src="images/lucario.png" data-toggle="tooltip" title="Lucario"></th>
+					<th><img id="yuk" src="images/magikarp.png" data-toggle="tooltip" title="Magikarp"></th>
 				</tr>
 				<tr>
-					<th>
-						<img id="chil" src="images/onix.png" data-toggle="tooltip" title="Onix">
-					</th>
-					<th>
-						<img id="pal" src="images/pikachu.png" data-toggle="tooltip" title="Pikachu">
-					</th>
-					<th>
-						<img id="gu" src="images/squirtle.png" data-toggle="tooltip" title="Squirtle">
-					</th>
+					<th><img id="chil" src="images/onix.png" data-toggle="tooltip" title="Onix"></th>
+					<th><img id="pal" src="images/pikachu.png" data-toggle="tooltip" title="Pikachu"></th>
+					<th><img id="gu" src="images/squirtle.png" data-toggle="tooltip" title="Squirtle"></th>
 				</tr>
 			</table>
 			<button class="btn" id="generate">Generate</button>
 			<button class="btn" id="validate">GO</button>
 		</div>
 	</body>
-		<script src="browser_action.js"></script>
+	<script src="browser_action.js"></script>
 </html>
