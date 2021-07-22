@@ -7,7 +7,7 @@ This Google Chrome extension transforms long URLs into memorable sequences of Po
 
 When you activate Cache'em all, you are tasked to select with replacement any mix of 9 Pokémon you'd like your URL to map to. Once you're satisfied, clicking `Generate` makes a one-time request to retrieve the currently active tab in your browser, which along with your Pokémon are directed to our database for bookkeeping.
 - Each choice is represented in our system as a single character, and we provide visual feedback of this format to service those who maybe haven't touched their Nintendo DS in a while. All the Pokémon we curated start with different letters of the alphabet to prevent any confusion (and collisions for that matter)!
-- We technically cap sequences and URLs at 255 characters. This actually means, given an adequate amount of persistent users, there are 1+9+81+729+...9^255 = (9^256-1)/8 valid possibilities of sequences that can be represented in our system ([Proof](http://mikestoolbox.com/powersum.html)). We don't intend for anyone to exceed 7 at a time, but leave that choice up to the individual.
+- We technically cap sequences and URLs at 255 characters. This actually means, given an adequate amount of persistent users, there are 1+9+81+729+⋯+9<sup>255</sup> = (9<sup>256</sup>-1)/8 valid possibilities of sequences that can be represented in our system ([Proof](http://mikestoolbox.com/powersum.html)). We don't intend for anyone to exceed 7 at a time, but leave that choice up to the individual.
 
 ## Why Pokémon though?
 
