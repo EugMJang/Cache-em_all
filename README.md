@@ -30,7 +30,6 @@ The inspiration for this project comes from a feature in the global phenomenon t
 ## How do I use this?
 
 Download this repository as a zip and unzip it. Then, navigate to chrome://extensions, enable developer mode, and click on "Load Unpacked". Select the unzipped file in your directory, and well, poggers, you're set to cache'em all!
-Alternatively use this website to load your websites! https://eugmjang.github.io/Cache-em_all/
 
 
 
